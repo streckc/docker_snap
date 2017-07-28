@@ -1,0 +1,9 @@
+version: "3"
+services:
+  snap_web:
+    build: .
+    ports:
+     - "8070:80"
+    environment:
+     - NGINX_HOST=snap
+     - NGINX_PORT=80
